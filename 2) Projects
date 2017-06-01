@@ -1,6 +1,10 @@
 Projects
 
 
+// GM: Why are these repated here? Can you use `diff` and `patch` to apply here those same changes that I applied to 1) ?
+// How do you use `diff` and `patch` ? The nerd answer is `man diff` and `man patch`. In practice you can probably
+// google for them and you will still learn something useful.
+
 Copying from 1)
 a) Using GIT 
 b) Coding and developing in C++

@@ -1,0 +1,97 @@
+Projects
+
+
+Copying from 1)
+a) Using GIT 
+b) Coding and developing in C++
+c) Python
+d) DSP in music
+e) Working on Linux (?), Embedded Linux
+f) PD/Max
+g) Using Raspberry Pi
+h) Using Bela
+j) Using Matlab
+k) Using Teensy
+i) machine learning/generative music/music analysis
+m) Sound Design
+
+P1: a) Using GIT : learning git using collidoscope
+Project a1)
+So, I thought about some projects that I thought would be useful to learn the things in 1)
+
+- To begin with, I want to make write my own version of Collidoscope and do a study. This will be working on C++ and GIT. I am just assuming that Fiore is very good at C++, just because he wrote that code, but I am not sure if that is a good example of a contempprary, high level C++ code. Nevertheless, a professor of software engineering once told me that the best to learn a programming language is to find a good code and change it for your needs, so I am planning to do that. What do you think?
+
+And while doing this, I will use GIT as you suggested. Do you use git desktop, or do you do everything from terminal?
+
+
+
+
+
+
+
+P2: b) c++ : Collidoscope development for my PhD
+
+Under construction…
+First task is to learn all the symbols and what they do in C++, such as >>
+
+
+
+
+
+P3: b,d,f,h) c++,PD,Bela,Synth :  Intellijel Metropolis On PD & Bela
+
+
+
+P4: b,d) c++, Dsp : Make one VST you’d use, with juce
+
+
+
+
+P5: b,d,h) c++,Dsp : Physical Modelling Synth and Waveguides
+Learn what they are
+Theory, applications
+Try to implement them on Bela to make a NIME
+
+Possible projects:
+Trombone
+Percussion instrument
+Veg/ fruit cutting
+P6: d) Dsp : Karplus Strong
+
+Learn what they are
+Theory, applications
+Try to implement them on Bela to make a NIME
+
+Possible projects:
+Veg/ fruit cutting
+Trombone
+Percussion instrument
+P7: c) Python
+
+
+P8: m) Sound Design
+Tau cannon:
+Bela , Pd, motors, lights, FSR
+Synthesize the Tau Cannon sound if you can, if not just use the wavs
+Physically build it
+
+
+P9: i) machine learning/generative music/music analysis
+Youtube videos dload – 1000
+Auto music analysis
+Audio mashup + https://www.youtube.com/watch?v=YvT_6RIaPJ8 on the top
+Video cut & play accordingly
+
+In process…
+
+P10: f) PD/Max
+Think of a project when you find the right time & place & motivation.
+https://www.automatonism.com/the-software/
+
+https://github.com/trending/max
+
+https://books.google.co.uk/books?id=f5NHDAAAQBAJ&pg=PA172&lpg=PA172&dq=max+msp+libraries+abstractions&source=bl&ots=80lra7QjjU&sig=XH-iSfE9YO6NxOd8LA3iSFcKLH8&hl=en&sa=X&ved=0ahUKEwjE4d3VgYnUAhXHtRoKHYvZBr4Q6AEISDAG#v=onepage&q=max%20msp%20libraries%20abstractions&f=false
+http://www.essl.at/works/rtc.html
+http://stefanofasciani.com/?p=865
+https://cycling74.com/tools/hoalibrary-v2
+

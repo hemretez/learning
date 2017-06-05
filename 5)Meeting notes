@@ -3,6 +3,9 @@ Logs
 Week of 22/05/2017:
 GIT - start learning using git. Make at least one commit for your own version.
 
+// A mistake I did. I thought I was committing only one file, but when I pressed commit, Github Desktop applied all changes including this file.
+// but I was still working on 2) and 3) under 05.06.2017 - GIT
+
 05.06.2017 - GIT
 1) basic commands on GIT from terminal
 

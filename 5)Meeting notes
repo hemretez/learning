@@ -1,0 +1,35 @@
+Logs
+
+Week of 22/05/2017:
+GIT - start learning using git. Make at least one commit for your own version.
+
+05.06.2017 - GIT
+1) basic commands on GIT from terminal
+
+
+git remote -v
+git pull
+git branch
+git checkout dev
+git tag v0.1
+git commit -m "after v0.1" README.md
+git log
+git checkout 79d960bc5bae4c37419ed11fde9eb0d1bb556eaf
+git push --tags
+git clone https://github.com/hemretez/test.git test2
+
+
+branch
+fork - work on something with writing privilages. you are copying a project.
+commit
+merge
+pull
+pull request - you’re proposing your changes and requesting that someone
+review and pull in your contribution and merge them into their branch.
+
+push
+fetch
+
+2) There is a project you want to work on on GIT:
+
+3) Specifically Collidoscope:

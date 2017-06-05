@@ -2,11 +2,39 @@ Projects
 
 
 // GM: Why are these repated here? Can you use `diff` and `patch` to apply here those same changes that I applied to 1) ?
+// HET: I wanted to have a copy of the list at the top of the 2) for practical reasons, i.e. quick glance.
+
 // How do you use `diff` and `patch` ? The nerd answer is `man diff` and `man patch`. In practice you can probably
 // google for them and you will still learn something useful.
 
+// HET: for example - to be checked
+/*
+cd Documents/learning/
+git log
+// now I have the latest commit hash from you: f55889d3faa0274dbf10836cd67568d6312db323
+git pull
+// now I have latest changes you made, right?
+cp 2)Projects 2)Projects.new
+// make changes on .new
+diff -u 2)Projects 2)Projects.new > 2)Projects.patch
+// now we have a patch file: 2)Projects.patch
+patch 2)Projects < 2)Projects.patch
+// applied the changes to the original file
+git add 2)Projects.new // I'm not sure about this line
+git commit -m "reply to GM's challenge" 2)Projects
+git tag -d 05.06.17
+// committed and tagged
+
+//if I realized I have something wrong, before committing I can:
+git checkout -- <2)Projects>
+
+// if I already committed, then I need to
+git checkout f55889d3faa0274dbf10836cd67568d6312db323
+*/
+
+
 Copying from 1)
-a) Using GIT 
+a) Using GIT
 b) Coding and developing in C++
 c) Python
 d) DSP in music
@@ -98,4 +126,3 @@ https://books.google.co.uk/books?id=f5NHDAAAQBAJ&pg=PA172&lpg=PA172&dq=max+msp+l
 http://www.essl.at/works/rtc.html
 http://stefanofasciani.com/?p=865
 https://cycling74.com/tools/hoalibrary-v2
-

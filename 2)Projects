@@ -3,6 +3,12 @@ Projects
 
 // GM: Why are these repated here? Can you use `diff` and `patch` to apply here those same changes that I applied to 1) ?
 // HET: I wanted to have a copy of the list at the top of the 2) for practical reasons, i.e. quick glance.
+// GM: it is bad to have duplicated content, in git and in life.
+// Then new challenge: generate a new file 1+2) so that:
+// a) the file content is the content of 1) followed by the content of 2) (you can use, e.g.: `cat`)
+// b) this file is untracked by git (use `.gitignore` for this), to avoid mistakenly committing it.
+// c) BONUS1: use git hooks to re-generate that file after every pull. This would be useful in many cases, but perhaps not in this one.
+// d) BONUS2: write a bash script that checks for modifications in 1) and 2) and generates 1+2) every time one of the two changes. You can get inspiration from https://github.com/BelaPlatform/Bela/blob/master/scripts/.bela_common and https://github.com/BelaPlatform/Bela/blob/master/scripts/build_project.sh
 
 // How do you use `diff` and `patch` ? The nerd answer is `man diff` and `man patch`. In practice you can probably
 // google for them and you will still learn something useful.
@@ -14,16 +20,32 @@ git log
 // now I have the latest commit hash from you: f55889d3faa0274dbf10836cd67568d6312db323
 git pull
 // now I have latest changes you made, right?
+
+    //GM well you actually need to do `git pull` before you get the latest commit hash from you. In practice, in your case, 
+	// git Desktop will have probably done that already (the famouse `sync` button)
+
 cp 2)Projects 2)Projects.new
 // make changes on .new
 diff -u 2)Projects 2)Projects.new > 2)Projects.patch
 // now we have a patch file: 2)Projects.patch
 patch 2)Projects < 2)Projects.patch
 // applied the changes to the original file
+
+	//GM right this probably works, but this way you are applying the changes from `2)Projects.new` to `2)Projects`, which is perfectly fine but it is not what I asked.
+	// I asked to apply to `2)` those same changes that I applied to `1)`! You can do something like 
+	git diff bbe89df..e10df94
+	// to get the patch file, then I guess you can mess around with `patch`'s option to apply it to `2)`
+	// Challenge response rejected, try again!
+
 git add 2)Projects.new // I'm not sure about this line
+
+	//GM the above line is the equivalent of ticking boxes in git Desktop.
+
 git commit -m "reply to GM's challenge" 2)Projects
 git tag -d 05.06.17
 // committed and tagged
+
+	//GM it seems that you are abusing tags ... they shold be used for something like releases, or "stable" versions, not just one for every commit 
 
 //if I realized I have something wrong, before committing I can:
 git checkout -- <2)Projects>

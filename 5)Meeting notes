@@ -27,8 +27,9 @@ fork - work on something with writing privilages. you are copying a project.
 commit
 merge
 pull
-pull request - you’re proposing your changes and requesting that someone
+pull/merge request - you’re proposing your changes and requesting that someone
 review and pull in your contribution and merge them into their branch.
+NOTE: pull request (on github) or merge request (on gitlab) are -afaik- service-specific (and not git-specific) names (and actions).
 
 push
 fetch

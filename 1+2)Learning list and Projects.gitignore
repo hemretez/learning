@@ -1,3 +1,21 @@
+1) The things that I want to learn and be good at
+
+a) Using GIT 
+b) Coding and developing in C++
+c) Python
+// GM: I cannot help with c
+d) DSP in music
+e) Working on Linux (?), Embedded Linux
+f) PD/Max
+g) Using Raspberry Pi
+h) Using Bela
+j) Using Matlab
+k) Using Teensy
+// GM: I cannot help with k
+i) machine learning/generative music/music analysis
+// GM: I cannot help with i
+m) Sound Design
+// GM: I cannot help with m
 PROJECTS
 
 P0: b,d,f,h) Using GIT & Developing a new instrument on Bela: C++, Bela, Synth, Network things
@@ -16,31 +34,9 @@ P0_2 a) Using GIT : Through Giulio's Challenges
 
 // Then new challenge: generate a new file 1+2) so that:
 // a) the file content is the content of 1) followed by the content of 2) (you can use, e.g.: `cat`)
-
-/*
-  496  cd Documents/learning/
-  497  ls -a
-  498  man cat
-  499  cat 1
-  500  cat 1\)\ The\ things\ that\ I\ want\ to\ learn\ and\ be\ good\ at 2\)Projects
-  501  ls
-  502  touch 1+2\)Learning\ list\ and\ Projects
-  503  ls
-  504  echo cat 1\)\ The\ things\ that\ I\ want\ to\ learn\ and\ be\ good\ at 2\)Projects > 1+2\)Learning\ list\ and\ Projects
-  505  ls
-  506  cat 1\)\ The\ things\ that\ I\ want\ to\ learn\ and\ be\ good\ at 2\)Projects > 1+2\)Learning\ list\ and\ Projects
-*/
-
 // b) this file is untracked by git (use `.gitignore` for this), to avoid mistakenly committing it.
-/*
-510  rename 1+2\)Learning\ list\ and\ Projects 1+2\)Learning\ list\ and\ Projects.gitignore
-511  man mv
-512  mv 1+2\)Learning\ list\ and\ Projects 1+2\)Learning\ list\ and\ Projects.gitignore
-*/
 // c) BONUS1: use git hooks to re-generate that file after every pull. This would be useful in many cases, but perhaps not in this one.
 // d) BONUS2: write a bash script that checks for modifications in 1) and 2) and generates 1+2) every time one of the two changes. You can get inspiration from https://github.com/BelaPlatform/Bela/blob/master/scripts/.bela_common and https://github.com/BelaPlatform/Bela/blob/master/scripts/build_project.sh
-
-touch regenGitignore.sh
 
 // How do you use `diff` and `patch` ? The nerd answer is `man diff` and `man patch`. In practice you can probably
 // google for them and you will still learn something useful.

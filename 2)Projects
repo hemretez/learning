@@ -31,16 +31,22 @@ P0_2 a) Using GIT : Through Giulio's Challenges
   506  cat 1\)\ The\ things\ that\ I\ want\ to\ learn\ and\ be\ good\ at 2\)Projects > 1+2\)Learning\ list\ and\ Projects
 */
 
+// GM: It seems that what line 506 does is copying file `1)...` to file `1+2)`... not what was requested.
+GM: Also note you can use quotes ".. ,, ,, ... .. ." around the file name instead of using backslashes for every space
+
 // b) this file is untracked by git (use `.gitignore` for this), to avoid mistakenly committing it.
 /*
 510  rename 1+2\)Learning\ list\ and\ Projects 1+2\)Learning\ list\ and\ Projects.gitignore
 511  man mv
 512  mv 1+2\)Learning\ list\ and\ Projects 1+2\)Learning\ list\ and\ Projects.gitignore
 */
+// GM: Why are you moving the file to `.gitignore` ? If you want to make sure `git` ignores a file, you should add the name of the file in a file called `.gitignore`.
+
 // c) BONUS1: use git hooks to re-generate that file after every pull. This would be useful in many cases, but perhaps not in this one.
 // d) BONUS2: write a bash script that checks for modifications in 1) and 2) and generates 1+2) every time one of the two changes. You can get inspiration from https://github.com/BelaPlatform/Bela/blob/master/scripts/.bela_common and https://github.com/BelaPlatform/Bela/blob/master/scripts/build_project.sh
 
 touch regenGitignore.sh
+// GM: what is this line for? Note that using `touch` is often useless: if you do `cat > newfile`, then `newfile` will be created if it does not exist. Also, if you do `vim newfile`, or `nano newfile`,even if `newfile` does not exist, it will be created as soon as you save.
 
 // How do you use `diff` and `patch` ? The nerd answer is `man diff` and `man patch`. In practice you can probably
 // google for them and you will still learn something useful.
